@@ -1,4 +1,4 @@
-/* ==================================Common styles */
+/* ====================== Common styles ============= */
 h1,
 h2,
 h3,
@@ -27,39 +27,84 @@ img {
 button {
   cursor: pointer;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
 }
-/* ================================ /Common styles */
+/* ============================= /Common styles ========== */
 
-/* ========= Page header */
+/* ============================= Page header ============== */
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.all-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-navigation {
+  display: flex;
+  align-items: center;
+}
 .page-logo {
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
-}
-.logo-other-color {
   color: #2e2f42;
 }
+
+.logo-other-color {
+  color: #4d5ae5;
+}
+
 .menu {
+  display: flex;
+  gap: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+
 .page-address {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.address-menu {
+  display: flex;
+  gap: 40px;
+}
+.menu-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -172,10 +217,10 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: #f4f4fd;
 }
 .footer-logo-other-color {
-  color: #f4f4fd;
+  color: #4d5ae5;
 }
 .footer-text {
   font-size: 16px;
