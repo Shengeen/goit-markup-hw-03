@@ -57,6 +57,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .all-nav {
   display: flex;
   justify-content: space-between;
@@ -136,6 +139,8 @@ body {
   color: #fff;
 }
 .main-button {
+  min-width: 169px;
+  display: block;
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
@@ -169,13 +174,16 @@ body {
   color: #2e2f42;
 }
 .second-section-menu {
-  column-gap: 24px;
   display: flex;
 }
 .second-section-list {
   width: calc((100% - 72px) / 4);
+  margin-right: 24px;
 }
 
+.second-section-list:last-child {
+  margin-right: 0;
+}
 .second-section-text {
   font-weight: 400;
   font-size: 16px;
@@ -204,7 +212,6 @@ body {
 }
 .third-section-menu {
   display: flex;
-  column-gap: 24px;
 }
 .third-section-list {
   background-color: #ffffff;
@@ -212,9 +219,16 @@ body {
   border-radius: 0 0 4px 4px;
   box-shadow: inset 0 1px 6px rgb(46, 47, 66, 0.08),
     0 1px 1px rgb(46, 47, 66, 0.16), 0 2px 1px rgb(46, 47, 66, 0.08);
+  margin-right: 24px;
+}
+.third-section-list:last-child {
+  margin-right: 0px;
+}
+.workers-list {
+  padding: 32px 0px;
 }
 .people-names {
-  margin-top: 32px;
+  text-align: center;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -224,7 +238,7 @@ body {
   color: #2e2f42;
 }
 .people-job {
-  margin-bottom: 32px;
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -251,18 +265,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
+  row-gap: 48px;
 }
-.fourth-section-list {
+.portfolio-list {
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+.fourth-section-list {
   width: calc((100% - 48px) / 3);
-  margin-bottom: 48px;
 }
 
 .portfolio-sections {
-  margin-top: 32px;
   margin-bottom: 8px;
-  margin-left: 16px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -270,8 +286,6 @@ body {
   color: #2e2f42;
 }
 .portfolio-text {
-  margin-bottom: 32px;
-  margin-left: 16px;
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
@@ -282,12 +296,12 @@ body {
 /* ========= /Footer section */
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px 0px;
 }
-.footer-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -300,7 +314,6 @@ body {
   color: #4d5ae5;
 }
 .footer-text {
-  margin-top: 16px;
   width: 264px;
   font-size: 16px;
   line-height: 1.5;
