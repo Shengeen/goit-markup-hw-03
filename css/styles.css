@@ -117,12 +117,16 @@ body {
 /* ========= /Page header */
 
 /* ========= Hero section */
+
 .first-section {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .main-headline {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 48px;
   max-width: 496px;
   font-weight: 700;
   font-size: 56px;
@@ -132,6 +136,12 @@ body {
   color: #fff;
 }
 .main-button {
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -143,24 +153,47 @@ body {
 .main-button:focus {
   background-color: #404bbf;
 }
+/* ============ Hero section */
 
+/* ================ About us */
+.second-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .second-section-headline {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.second-section-menu {
+  column-gap: 24px;
+  display: flex;
+}
+.second-section-list {
+  width: calc((100% - 72px) / 4);
+}
+
 .second-section-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/* ================ About us */
+
+/* ================ our team */
 .third-section {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .third-section-headline {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -169,10 +202,20 @@ body {
   color: #2e2f42;
   text-transform: capitalize;
 }
+.third-section-menu {
+  display: flex;
+  column-gap: 24px;
+}
 .third-section-list {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+  box-shadow: inset 0 1px 6px rgb(46, 47, 66, 0.08),
+    0 1px 1px rgb(46, 47, 66, 0.16), 0 2px 1px rgb(46, 47, 66, 0.08);
 }
 .people-names {
+  margin-top: 32px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -181,12 +224,21 @@ body {
   color: #2e2f42;
 }
 .people-job {
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
 }
+/* ================ our team */
+
+/* ================ our portfolio */
+.fourth-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .fourth-section-headline {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -195,7 +247,22 @@ body {
   color: #2e2f42;
   text-transform: capitalize;
 }
+.fourth-section-menu {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
+.fourth-section-list {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  width: calc((100% - 48px) / 3);
+  margin-bottom: 48px;
+}
+
 .portfolio-sections {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  margin-left: 16px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -203,15 +270,22 @@ body {
   color: #2e2f42;
 }
 .portfolio-text {
+  margin-bottom: 32px;
+  margin-left: 16px;
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* ========= /Hero section */
+/* ================ our portfolio */
+
 /* ========= /Footer section */
 .page-footer {
   background-color: #2e2f42;
+}
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -226,6 +300,8 @@ body {
   color: #4d5ae5;
 }
 .footer-text {
+  margin-top: 16px;
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
